@@ -11,10 +11,12 @@ struct Tweet: Codable {
     
     let name: String
     let text: String
+    let date: String
     
-    init(name: String, text: String) {
+    init(name: String, text: String, date: String) {
         self.name = name
         self.text = text
+        self.date = date
     }
 }
 

@@ -49,7 +49,7 @@ class APIController {
                     guard let name = post.user?.screen_name,
                           let text = post.text else { return nil }
                     
-                    return Tweet(name: name, text: text)
+                    return Tweet(name: name, text: text, date: "25/03/2021 22:49")
                 } ?? []
                 
                 self.delegate?.manageTweets(self.tweets)
